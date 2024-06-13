@@ -5,7 +5,7 @@ function NavBar() {
     <section className="navbar-container">
       <nav>
         <li>
-          <NavLink to="/galerie">A propos de moi</NavLink>
+          <NavLink to="/galerie">Prendre rendez-vous</NavLink>
         </li>
         <li>
           <NavLink to="/">Prestations</NavLink>
@@ -17,7 +17,7 @@ function NavBar() {
           <NavLink to="/classement">Me contacter</NavLink>
         </li>
         <li>
-          <NavLink to="/classement">Prendre rendez-vous</NavLink>
+          <NavLink to="/classement">Qui suis-je?</NavLink>
         </li>
       </nav>
     </section>
