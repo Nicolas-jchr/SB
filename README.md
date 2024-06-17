@@ -25,7 +25,7 @@ Réalisation d'un site vitrine pour une esthéticienne pour faire de la publicit
 
 ## 🏗️ Structure de l'application
 
-``mermaid
+```mermaid
 graph TD;
     Accueil;
     Accueil-->à propos;
@@ -33,6 +33,7 @@ graph TD;
     Accueil-->Contact;
     Prestations-->Prestations_Id
     Error404;
+```
 
 ## 📈 Statut du projet
 
