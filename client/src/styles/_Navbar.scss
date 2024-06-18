@@ -1,7 +1,8 @@
 nav {
   display: flex;
   justify-content: space-around;
-  font-size: 5rem;
+  font-size: 2rem;
+  background-color: black;
 }
 
 li {
@@ -11,4 +12,5 @@ li {
 a {
   text-decoration: none;
   padding: 0;
+  color: white;
 }

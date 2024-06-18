@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
-    <section className="navbar-container">
+    <section className="navbar-desktop">
       <nav>
         <li>
           <NavLink to="/galerie">Prendre rendez-vous</NavLink>
