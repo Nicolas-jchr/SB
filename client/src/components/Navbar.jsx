@@ -14,9 +14,6 @@ function NavBar() {
           <NavLink to="/Avis">Avis</NavLink>
         </li>
         <li>
-          <NavLink to="/Contact">Me contacter</NavLink>
-        </li>
-        <li>
           <NavLink to="/About">Qui suis-je?</NavLink>
         </li>
       </nav>

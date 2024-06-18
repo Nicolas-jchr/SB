@@ -8,7 +8,6 @@ import "./styles/import.scss";
 import App from "./App";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
-import Contact from "./pages/Contact";
 import Avis from "./pages/Avis";
 import Meet from "./pages/Meet";
 import About from "./pages/About";
@@ -33,10 +32,6 @@ const router = createBrowserRouter([
       {
         path: "/Avis",
         element: <Avis />,
-      },
-      {
-        path: "/Contact",
-        element: <Contact />,
       },
       {
         path: "/About",

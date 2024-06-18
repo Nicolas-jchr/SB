@@ -6,13 +6,13 @@
 
   .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Légèrement transparent */
+    background-color: rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: rgba(0, 0, 0, 0.8); /* Opaque au survol */
+      background-color: rgba(0, 0, 0, 0.8);
     }
 
     li {
@@ -21,7 +21,7 @@
 
     a {
       text-decoration: none;
-      padding: 0;
+      padding: 2rem;
       color: var(--color-4);
     }
   }

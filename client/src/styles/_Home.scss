@@ -71,9 +71,17 @@
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease,
-    background-color 0.3s ease;
+    background-color 0.3s ease,
+    opacity 0.6s ease,
+    transform 0.6s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.articlesContent.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .articlesContent:hover,

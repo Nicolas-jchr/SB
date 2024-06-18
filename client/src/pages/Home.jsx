@@ -1,8 +1,31 @@
+import { useEffect } from "react";
 import avatar from "../assets/avatarsbeauty.svg";
-// import cil from "../assets/cils1.svg";
 import cil2 from "../assets/cils2.jpg";
 
 function Home() {
+  useEffect(() => {
+    const articles = document.querySelectorAll(".articlesContent");
+
+    const handleScroll = () => {
+      articles.forEach((article) => {
+        const articleTop = article.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (articleTop < windowHeight - 100) {
+          // Adjust 100 for more/less offset
+          article.classList.add("visible");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Trigger the function once on load to show articles already in view
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <header className="headerContainer">
@@ -23,7 +46,7 @@ function Home() {
           <div className="articlesContainer">
             <article className="articlesContent">
               <img src={cil2} alt="extensions de cils" />
-              <h4 className="detailTitle">Extensions de Cils</h4>
+              <h4 className="detailTitle">Cils</h4>
             </article>
             <article className="articlesContent">
               <img src={cil2} alt="extensions de cils" />
