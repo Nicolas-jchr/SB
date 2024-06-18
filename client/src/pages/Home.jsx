@@ -1,4 +1,5 @@
 import avatar from "../assets/avatarsbeauty.svg";
+import cil from "../assets/cils1.svg";
 
 function Home() {
   return (
@@ -10,35 +11,87 @@ function Home() {
       </header>
       <main>
         <section className="sectionCils">
-          <h3>Extensions de cils</h3>
-          <article>
-            <p>Volume Russe</p>
-            <p>Volume Mixte</p>
-            <p>Volume Léger</p>
-            <p>Volume je sais pas</p>
-          </article>
+          <h3 className="sectionTitles">Extensions de cils</h3>
+          <div className="articlesContainer">
+            <article className="articleContent">
+              <h4 className="cardTitle">Volume Russe</h4>
+              <img src={cil} alt="extensions de cils" />
+              <button type="button" className="buttonMore">
+                Voir plus
+              </button>
+            </article>
+            <article>
+              <h4 className="cardTitle">Volume Mixte</h4>
+              <img src={cil} alt="extensions de cils" />
+              <button type="button" className="buttonMore">
+                Voir plus
+              </button>
+            </article>
+            <article>
+              <h4 className="cardTitle">Volume Léger</h4>
+              <img src={cil} alt="extensions de cils" />
+              <button type="button" className="buttonMore">
+                Voir plus
+              </button>
+            </article>
+            <article>
+              <h4 className="cardTitle">Volume je sais pas</h4>
+              <img src={cil} alt="extensions de cils" />
+              <button type="button" className="buttonMore">
+                Voir plus
+              </button>
+            </article>
+          </div>
         </section>
         <section className="sectionMakeup">
-          <h3>Maquillage</h3>
-          <article>
-            <p>Mariage</p>
-            <p>Soirée</p>
-            <p>Coaching</p>
-          </article>
+          <h3 className="sectionTitles">Maquillage</h3>
+          <div className="articlesContainer">
+            <article>
+              <h4>Mariage</h4>
+              <img src="" alt="maquillage mariage" />
+              <button type="button">Voir plus</button>
+            </article>
+            <article>
+              <h4>Soirée</h4>
+              <img src="" alt="maquillage soirée" />
+              <button type="button">Voir plus</button>
+            </article>
+            <article>
+              <h4>Coaching</h4>
+              <img src="" alt="maquillage coaching" />
+              <button type="button">Voir plus</button>
+            </article>
+          </div>
         </section>
         <section className="sectionMassage">
-          <h3>Massage</h3>
-          <article>
-            <p>Polynéessen</p>
-            <p>Rapidos</p>
-          </article>
+          <h3 className="sectionTitles">Massage</h3>
+          <div className="articlesContainer">
+            <article>
+              <h4>Polynéessen</h4>
+              <img src="" alt="massage polynéessen" />
+              <button type="button">Voir plus</button>
+            </article>
+            <article>
+              <h4>Rapidos</h4>
+              <img src="" alt="massage rapidos" />
+              <button type="button">Voir plus</button>
+            </article>
+          </div>
         </section>
-        <section className="sectionOngleries">
-          <h3>Onglerie</h3>
-          <article>
-            <p>Semi permanent</p>
-            <p>Semi des pieds</p>
-          </article>
+        <section className="sectionOnglerie">
+          <h3 className="sectionTitles">Onglerie</h3>
+          <div className="articlesContainer">
+            <article>
+              <h4>Semi permanent</h4>
+              <img src="" alt="onglerie semi permanent" />
+              <button type="button">Voir plus</button>
+            </article>
+            <article>
+              <h4>Semi des pieds</h4>
+              <img src="" alt="onglerie semi des pieds" />
+              <button type="button">Voir plus</button>
+            </article>
+          </div>
         </section>
       </main>
     </>
