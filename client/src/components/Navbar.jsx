@@ -5,7 +5,7 @@ function NavBar() {
     <section className="navbar-desktop">
       <nav className="navbar">
         <li>
-          <NavLink to="/Meet">Prendre rendez-vous</NavLink>
+          <NavLink to="/">Accueil</NavLink>
         </li>
         <li>
           <NavLink to="/Services">Prestations</NavLink>

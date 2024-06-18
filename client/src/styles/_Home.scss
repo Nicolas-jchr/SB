@@ -3,11 +3,12 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin: 3rem;
 }
-.primaryTitle,
-.secondaryTitle {
+.primaryTitle {
   font-size: 3rem;
   color: var(--color-1);
+  font-family: var(--font-1);
 }
 
 .avatar {
@@ -15,61 +16,10 @@
   height: 500px;
 }
 
-.sectionTitles {
-  text-align: center;
-  font-size: 3rem;
-  margin: 0;
-  background-color: var(--color-2);
-}
-
-.articlesContainer {
+.meetButton {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: var(--color-2);
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.articleContent,
-article {
-  opacity: 0;
-  transition:
-    opacity 0.5s ease-out,
-    transform 0.5s ease-out;
-  &.is-visible {
-    opacity: 1;
-    transform: translateY(0);
-    animation: fadeInUp 0.5s forwards;
-  }
-}
-article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   background-color: var(--color-1);
-  margin: 1rem;
-  border-radius: 10px;
-}
-
-article > img {
-  height: 350px;
-}
-
-.sectionCils {
-  color: white;
-}
-
-.buttonMore {
-  background-color: var(--color-2);
   color: white;
   font-size: 1.5rem;
   border: none;
@@ -80,15 +30,58 @@ article > img {
   transition: background-color 0.3s ease;
 }
 
-.buttonMore:hover {
+.sectionTitle {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  background-color: var(--color-2);
+  font-family: var(--font-1);
+}
+
+.articlesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: var(--color-2);
+  margin: 3rem;
+}
+
+.articlesContent {
+  display: flex;
+  background-color: var(--color-1);
+  margin: 1rem;
+  border-radius: 10px;
+  width: calc(50% - 2rem);
+  height: auto;
+  padding: 1rem;
+}
+
+.articlesContent img {
+  height: auto;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.buttonDetail {
+  background-color: var(--color-2);
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50%;
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.buttonDetail:hover {
   background-color: #c22f79;
 }
 
-.buttonMore:focus {
+.buttonDetail:focus {
   outline: none;
-}
-
-.cardTitle {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
 }
