@@ -28,10 +28,10 @@ Réalisation d'un site vitrine pour une esthéticienne pour faire de la publicit
 ```mermaid
 graph TD;
     Accueil;
-    Accueil-->à propos;
+    Accueil-->à-propos;
     Accueil-->Prestations;
     Accueil-->Contact;
-    Prestations-->Prestations_Id
+    Prestations-->Prestations-Id
     Error404;
 ```
 

@@ -1,19 +1,23 @@
 .headerContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   text-align: center;
   margin: 3rem;
 }
+
 .primaryTitle {
   font-size: 3rem;
-  color: var(--color-1);
+  color: var(--color-3);
   font-family: var(--font-1);
 }
 
 .avatar {
-  align-items: center;
-  height: 500px;
+  display: block;
+  margin: 1rem auto;
+  height: auto;
+  width: 30%;
+  object-fit: cover;
 }
 
 .meetButton {
@@ -27,7 +31,16 @@
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+  text-decoration: none;
+}
+
+.meetButton:hover,
+.meetButton:focus {
+  background-color: var(--color-3);
+  transform: scale(1.05);
 }
 
 .sectionTitle {
@@ -36,12 +49,13 @@
   margin: 0;
   background-color: var(--color-2);
   font-family: var(--font-1);
+  color: var(--color-1);
 }
 
 .articlesContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
   background-color: var(--color-2);
   margin: 3rem;
 }
@@ -51,19 +65,34 @@
   background-color: var(--color-1);
   margin: 1rem;
   border-radius: 10px;
-  width: calc(50% - 2rem);
   height: auto;
   padding: 1rem;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.articlesContent:hover,
+.articlesContent:focus {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-2);
 }
 
 .articlesContent img {
   height: auto;
-  width: 50%;
+  width: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.buttonDetail {
+.detailTitle {
+  display: flex;
+  justify-content: center;
   background-color: var(--color-2);
   color: white;
   font-size: 1.5rem;
@@ -73,9 +102,6 @@
   margin-top: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 50%;
-  margin: 0;
-  margin-left: 1rem;
 }
 
 .buttonDetail:hover {
@@ -84,4 +110,25 @@
 
 .buttonDetail:focus {
   outline: none;
+}
+
+@media (min-width: 768px) {
+  .articlesContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 968px) {
+  .articlesContent {
+    flex-direction: column;
+  }
+
+  .articlesContent img {
+    width: 100%;
+  }
+
+  .buttonDetail {
+    width: 100%;
+    margin-left: 0;
+  }
 }
