@@ -1,16 +1,35 @@
-nav {
-  display: flex;
-  justify-content: space-around;
-  font-size: 2rem;
-  background-color: black;
+.navbar-desktop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Légèrement transparent */
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8); /* Opaque au survol */
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 0;
+      color: white;
+    }
+  }
 }
 
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  padding: 0;
-  color: white;
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
 }
