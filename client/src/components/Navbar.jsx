@@ -28,7 +28,7 @@ function NavBar() {
           </li>
         </nav>
       </section>
-      <section className="navbar-logo-container">
+      <section className="navbarMobileContainer">
         <nav>
           <menu className="navbarMobile">
             <li>
