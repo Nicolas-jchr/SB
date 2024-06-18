@@ -1,34 +1,153 @@
-.navbar-desktop {
-  position: fixed;
-  top: 0;
+// .navbar-desktop {
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 1000;
+
+//   .navbar {
+//     display: flex;
+//     justify-content: flex-end;
+//     font-size: 2rem;
+//     background-color: rgba(0, 0, 0, 0.5);
+//     transition: background-color 0.3s ease;
+
+//     &:hover {
+//       background-color: rgba(0, 0, 0, 0.8);
+//     }
+
+//     li {
+//       list-style: none;
+//     }
+
+//     a {
+//       text-decoration: none;
+//       padding: 2rem;
+//       color: var(--color-4);
+//     }
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .navbar-desktop {
+//     display: none;
+//   }
+// }
+
+:root {
+  --primary-color: #007bff;
+  --hover-color: #0056b3;
+  --navbar-bg-color: rgba(0, 0, 0, 0.5);
+  --navbar-hover-bg-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-logo-container {
+  display: none;
+  background-color: var(--primary-color);
   width: 100%;
+  position: fixed;
   z-index: 1000;
+  top: 0;
+  opacity: 0.8; // Opacité par défaut
+  transition:
+    background-color 0.3s ease,
+    opacity 0.3s ease; // Transition fluide
 
-  .navbar {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease;
+  &:hover {
+    opacity: 1; // Pleine opacité au survol
+    background-color: var(
+      --hover-color
+    ); // Couleur de fond différente au survol
+  }
 
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
+  nav {
+    menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      margin: 0;
 
-    li {
-      list-style: none;
-    }
+      li {
+        list-style: none;
 
-    a {
-      text-decoration: none;
-      padding: 2rem;
-      color: var(--color-4);
+        a {
+          padding: 0;
+        }
+      }
     }
   }
 }
 
-@media (max-width: 768px) {
+.navIcon {
+  width: 4rem;
+  padding: 6px 12px;
+  filter: drop-shadow(10px 7px 10px rgb(71, 1, 92));
+}
+
+.addArt {
+  width: 7rem;
+  padding: 8px 10px 0 10px;
+  filter: drop-shadow(2px 2px 5px rgb(71, 1, 92));
+}
+
+.navbar-desktop {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8; // Opacité par défaut
+  background-color: var(--navbar-bg-color); // Couleur de fond par défaut
+  transition:
+    background-color 0.3s ease,
+    opacity 0.3s ease; // Transition fluide
+
+  &:hover {
+    opacity: 1; // Pleine opacité au survol
+    background-color: var(
+      --navbar-hover-bg-color
+    ); // Couleur de fond différente au survol
+  }
+}
+
+.navbarTop {
+  display: flex;
+  list-style: none;
+  padding-right: 1.5rem;
+}
+
+.navbarContent {
+  display: flex;
+  align-items: center;
+  padding-right: 4rem;
+
+  a {
+    font-size: calc(0.6rem + 1vw);
+    text-decoration: none; // Enlever le soulignement du texte
+  }
+}
+
+.logoDesktop {
+  width: 120px;
+}
+
+// MEDIA QUERY POUR MOBILE
+
+@media (max-width: 767px) {
   .navbar-desktop {
     display: none;
+  }
+
+  .navbar-logo-container {
+    display: block;
+    background-color: var(--navbar-bg-color); // Couleur de fond par défaut
+    transition:
+      background-color 0.3s ease,
+      opacity 0.3s ease; // Transition fluide
+
+    &:hover {
+      opacity: 1; // Pleine opacité au survol
+      background-color: var(
+        --navbar-hover-bg-color
+      ); // Couleur de fond différente au survol
+    }
   }
 }

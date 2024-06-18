@@ -20,9 +20,9 @@ function Footer() {
       </section>
       <section>
         <h1>Me contacter</h1>
-        <p>Institut SBeauty - 10 rue, 30190 Saint-Chaptes</p>
-        <p>téléphone: 07-00-00-00-00</p>
-        <p>e-mail: institut@gmail.com</p>
+        <p>Institut SBeauty - 68 rue des Candisons, 30190 Saint-Chaptes</p>
+        <p>téléphone: 07 88 34 21 32</p>
+        <p>e-mail: institut.sylviabeauty@gmail.com</p>
       </section>
     </footer>
   );
