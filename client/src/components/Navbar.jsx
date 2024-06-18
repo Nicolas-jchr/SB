@@ -5,19 +5,19 @@ function NavBar() {
     <section className="navbar-desktop">
       <nav className="navbar">
         <li>
-          <NavLink to="">Prendre rendez-vous</NavLink>
+          <NavLink to="/Meet">Prendre rendez-vous</NavLink>
         </li>
         <li>
-          <NavLink to="">Prestations</NavLink>
+          <NavLink to="/Services">Prestations</NavLink>
         </li>
         <li>
-          <NavLink to="">Avis</NavLink>
+          <NavLink to="/Avis">Avis</NavLink>
         </li>
         <li>
-          <NavLink to="">Me contacter</NavLink>
+          <NavLink to="/Contact">Me contacter</NavLink>
         </li>
         <li>
-          <NavLink to="">Qui suis-je?</NavLink>
+          <NavLink to="/About">Qui suis-je?</NavLink>
         </li>
       </nav>
     </section>
