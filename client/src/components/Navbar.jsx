@@ -61,17 +61,27 @@ function NavBar() {
                 </NavLink>
               </div>
               <nav className="navbarBurger">
-                <li className="navbarContent">
+                <li className="navbarBurgerContent">
                   <NavLink to="/">Accueil</NavLink>
                 </li>
-                <li className="navbarContent">
+                <li className="navbarBurgerContent">
                   <NavLink to="/Services">Prestations</NavLink>
                 </li>
-                <li className="navbarContent">
+                <li className="navbarBurgerContent">
                   <NavLink to="/Avis">Avis</NavLink>
                 </li>
-                <li className="navbarContent">
+                <li className="navbarBurgerContent">
                   <NavLink to="/About">Qui suis-je?</NavLink>
+                </li>
+                <li className="navbarBurgerContent">
+                  <a
+                    href="https://www.rdv360.com/sbeauty-30190-st-chaptes"
+                    target="_blank"
+                    className="meetButtonMobileBurger"
+                    rel="noreferrer"
+                  >
+                    Prendre rendez-vous
+                  </a>
                 </li>
               </nav>
             </Menu>

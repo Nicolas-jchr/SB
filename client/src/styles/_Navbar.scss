@@ -166,15 +166,17 @@
 }
 
 .bm-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: var(--color-2);
-  padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  padding: 5rem 1.5rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .bm-item-list {
   color: #b8b7ad;
-  padding: 0.8em;
 }
 
 .bm-item {
@@ -185,10 +187,11 @@
   transition: color 0.2s;
   font-weight: bold;
   list-style: none;
+  margin-bottom: 1.5rem;
 }
 
 .bm-item:hover {
-  color: #000000;
+  color: var(--color-1);
 }
 
 .bm-overlay {
@@ -205,4 +208,37 @@
 
 .logoMobile {
   width: 250px;
+}
+
+.navbarBurgerContent {
+  a {
+    font-family: var(--font-1);
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--color-3);
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+
+    &:hover {
+      color: var(--hover-color);
+      transform: scale(1.1);
+    }
+  }
+}
+
+.meetButtonMobileBurger {
+  display: block;
+  margin: 2rem auto 0;
+  background-color: var(--color-4);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: var(--color-4);
+  }
 }
