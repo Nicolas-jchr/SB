@@ -2,7 +2,7 @@
 
 ## 💡 Le concept
 
-Réalisation d'un site vitrine pour une esthéticienne pour faire de la publicité. 
+Réalisation d'un site vitrine pour une esthéticienne pour faire de la publicité.
 
 ## 🛠️ Fonctionnalités:
 
@@ -11,7 +11,6 @@ Réalisation d'un site vitrine pour une esthéticienne pour faire de la publicit
 - L'utilisateur pourra naviquer sur plusieurs pages.
 - L'utilisateur pourra voir les détails de chaques préstations proposé.
 - L'utilisateur pourra envoyer un mail pour contacter l'administrateur du site.
-
 
 ### 📝 Dans cette version:
 

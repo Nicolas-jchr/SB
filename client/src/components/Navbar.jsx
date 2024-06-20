@@ -6,13 +6,23 @@ function NavBar() {
   return (
     <>
       <section className="navbar-desktop">
-        <NavLink to="/">
-          <img
-            src={Logo}
-            alt="Logo Street Art Hunter"
-            className="logoDesktop"
-          />
-        </NavLink>
+        <div className="left-section">
+          <NavLink to="/">
+            <img
+              src={Logo}
+              alt="Logo Street Art Hunter"
+              className="logoDesktop"
+            />
+          </NavLink>
+          <a
+            href="https://www.rdv360.com/sbeauty-30190-st-chaptes"
+            target="_blank"
+            className="meetButtonHome"
+            rel="noreferrer"
+          >
+            Prendre rendez-vous
+          </a>
+        </div>
         <nav className="navbarTop">
           <li className="navbarContent">
             <NavLink to="/">Accueil</NavLink>
@@ -63,20 +73,3 @@ function NavBar() {
 }
 
 export default NavBar;
-
-// <section className="navbar-desktop">
-//   <nav className="navbar">
-//     <li>
-//       <NavLink to="/">Accueil</NavLink>
-//     </li>
-//     <li>
-//       <NavLink to="/Services">Prestations</NavLink>
-//     </li>
-//     <li>
-//       <NavLink to="/Avis">Avis</NavLink>
-//     </li>
-//     <li>
-//       <NavLink to="/About">Qui suis-je?</NavLink>
-//     </li>
-//   </nav>
-// </section>
