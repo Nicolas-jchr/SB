@@ -70,8 +70,9 @@
 .navbarTop {
   display: flex;
   list-style: none;
-  padding-right: 1.5rem;
+  justify-content: space-around;
   margin: 0;
+  font-family: var(--font-2);
 }
 
 .navbarContent {
