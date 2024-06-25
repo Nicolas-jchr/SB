@@ -12,14 +12,13 @@ function Home() {
         const windowHeight = window.innerHeight;
 
         if (articleTop < windowHeight - 100) {
-          // Adjust 100 for more/less offset
           article.classList.add("visible");
         }
       });
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Trigger the function once on load to show articles already in view
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
